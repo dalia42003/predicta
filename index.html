@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنبؤ بالمخاطر للمشروعات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تنبؤ بالمخاطر للمشروعات</h1>
+        <form id="risk-form">
+            <div class="input-group">
+                <label for="budget">الميزانية (بالمليون):</label>
+                <input type="number" id="budget" name="budget" required min="0">
+            </div>
+            <div class="input-group">
+                <label for="duration">المدة (بالأيام):</label>
+                <input type="number" id="duration" name="duration" required min="1">
+            </div>
+            <div class="input-group">
+                <label for="resources">عدد الموارد:</label>
+                <input type="number" id="resources" name="resources" required min="1">
+            </div>
+            <button type="submit">تنبؤ بالمخاطر</button>
+        </form>
+        <div id="result">
+            <p id="risk-result"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
